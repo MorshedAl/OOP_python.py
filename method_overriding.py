@@ -24,6 +24,7 @@ i=iphone()
 
 
 # overriding থেকে বাঁচতে super()
+# তথা super class er attribute ব্যবহার করতে।
 class phone:
  def __init__(self):
     print("world! phone class.")
