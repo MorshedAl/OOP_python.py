@@ -10,7 +10,7 @@ class employee:
    self.name=name
    self.designation=designation
    self.salary=salary
-   self.eid="e"+str(employee.employee_count)
+   self.eid=employee.employee_count
    employee.employee_count +=1
  
  
