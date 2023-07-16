@@ -1,39 +1,26 @@
-
-#inheritence
-class phone:
- def __init__(self):
-    print("i am in phone class.")
-
-class iphone(phone):
-  pass
-
-i=iphone()
-
-
-
 #method overriding 
-class phone:
- def __init__(self):
-    print("world! phone class.")
 
-class iphone(phone):
-  def __init__(self):
-    print("I'm in iphone class.")
+class animal:
+ def __init__(self,name):
+  self.name=name
+  
+ 
+ def walk(self):
+  print(self.name,' is walking ')
 
-i=iphone()
+class dog(animal):
+  def __init__(self,name):
+    super().__init__(name)
+  
+   
+  def walk(self):  # method overriding 
+  # super().walk()
+    print(self.name,' is running')
+    
+    
+#===============
+d=dog('rover')
+d.walk()
 
-
-# overriding থেকে বাঁচতে super()
-# তথা super class er attribute ব্যবহার করতে।
-class phone:
- def __init__(self):
-    print("world! phone class.")
-
-class iphone(phone):
-  def __init__(self):
-    super().__init__()
-    print("I'm in iphone class.")
-
-i=iphone()
 
 
