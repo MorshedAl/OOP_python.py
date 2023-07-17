@@ -20,8 +20,8 @@ class student:
 
 #=============================
 s1=student('Nafis',120)
-#s1.Id=140  # private বলে আপডেট করা যায়না
-s1.update_Id(140) # method মাধ্যমে আপডেট করা যায়
+#s1.Id=140  # private বলে বাইরে থেকে আপডেট করা যায়না
+s1.update_Id(140) # method মাধ্যমে,class র ভিতরে আপডেট করা যায়
 
 s1.details()
 
